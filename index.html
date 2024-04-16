@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="./src/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./src/css/owl.theme.default.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .bx-wrapper {
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider">
+        <div><img style="height: 100%;width: 100%;" src="./src/img/01.jpg" alt=""></div>
+        <div><img style="height: 100%;width: 100%;" src="./src/img/02.jpg" alt=""></div>
+        <div><img style="height: 100%;width: 100%;" src="./src/img/03.jpg" alt=""></div>
+        <div><img style="height: 100%;width: 100%;" src="./src/img/04.jpg" alt=""></div>
+        <div><img style="height: 100%;width: 100%;" src="./src/img/05.jpg" alt=""></div>
+    </div>
+    <div style="padding: 80px;" class="owl-carousel">
+        <div> <img style="height: 350px;width: 450px;" src="./src/img/00.jpg" alt=""> </div>
+        <div> <img style="height: 350px;width: 450px;" src="./src/img/01.jpg" alt=""> </div>
+        <div> <img style="height: 350px;width: 450px;" src="./src/img/02.jpg" alt=""> </div>
+        <div> <img style="height: 350px;width: 450px;" src="./src/img/03.jpg" alt=""> </div>
+        <div> <img style="height: 350px;width: 450px;" src="./src/img/04.jpg" alt=""> </div>
+        <div> <img style="height: 350px;width: 450px;" src="./src/img/06.jpg" alt=""> </div>
+        <div> <img style="height: 350px;width: 450px;" src="./src/img/05.jpg" alt=""> </div>
+    </div>
+    <!-- bxslider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="./src/js/owl.carousel.min.js"></script>
+    <!-- bxslider -->
+
+
+    <script>
+        // bxslider
+        $(document).ready(function () {
+            $(".slider").bxSlider({
+                auto: true,
+            });
+        });
+        // bxslider
+        // owl-carousel
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                autoplay:true,
+                responsive:{
+                        525:{
+                            items:1,
+                        },
+    }
+            });
+        });
+        // owl-carousel
+    </script>
+
+</body>
+
+</html>
